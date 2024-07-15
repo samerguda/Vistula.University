@@ -8,6 +8,19 @@
         body {
             font-family: Arial, sans-serif;
         }
+
+        .email-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;}
         table {
             width: 100%;
             border-collapse: collapse;
@@ -47,6 +60,14 @@
     <a href="https://apply.vistula.edu.pl" class="btn apply-btn">Apply Now</a>
     <button class="btn print-btn" onclick="window.print()">Print</button>
 </div>
+
+<button class="email-button" onclick="sendEmail()">Send Email to Regina</button>
+
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:REGINA.STELMASZYK@WAB.EDU.PL";
+        }
+    </script>
 
 <table>
     <tr>
